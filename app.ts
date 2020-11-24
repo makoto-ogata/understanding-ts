@@ -1,14 +1,23 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string){
-  const result = n1 + n2;
-  if(showResult) {
-    console.log(phrase + result);
-  } else {
-    return result;
-  }
-}
+const person: {
+  name: string,
+  age: number,
+  hobbies: string[],
+  role: [number, string],
+} = {
+  name: 'yota',
+  age: 30,
+  hobbies: ['Sports', 'Cooking'],
+  role: [2, 'author'],
+};
 
-const number1 = 5;
-const number2 = 2.8;
-const showResult = true;
-const resultPhrase = 'Result: ';
-add(number1, number2, showResult, resultPhrase);
+
+let favoriteActivities: string[];
+favoriteActivities = ['Sports'];
+
+// person.role = [0, 'member'];
+
+console.log(person.name);
+
+for (const hobbie of person.hobbies){
+  console.log(hobbie);
+}
